@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+/* AGGRESSIVE OVERFLOW PREVENTION */
+* {
+  box-sizing: border-box !important;
+  max-width: 100vw !important;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box !important;
+  max-width: 100vw !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100vw !important;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100vw !important;
+  position: relative;
+}
+
+#root {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100vw !important;
+}
+
+/* PREVENT ALL HORIZONTAL OVERFLOW */
+div, section, main, article, aside, header, footer, nav, span, p, h1, h2, h3, h4, h5, h6 {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+/* CONTAINER FIXES */
+.container {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+/* FLEX AND GRID FIXES */
+.flex, .grid {
+  min-width: 0 !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* BUTTON AND FORM FIXES */
+button, input, textarea, select {
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+  word-wrap: break-word !important;
+}
+
+/* IMAGE AND MEDIA FIXES */
+img, svg, video, canvas {
+  max-width: 100vw !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* ABSOLUTE AND FIXED POSITIONING FIXES */
+.absolute, .fixed, .relative {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* TRANSFORM FIXES */
+.transform {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* PREVENT NEGATIVE MARGINS */
+* {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* OVERRIDE TAILWIND UTILITIES THAT MIGHT CAUSE OVERFLOW */
+.w-screen {
+  width: 100vw !important;
+  max-width: 100vw !important;
+}
+
+.min-w-0 {
+  min-width: 0 !important;
+}
+
+/* FORCE OVERFLOW HIDDEN ON EVERYTHING */
+* {
+  overflow-x: hidden !important;
+}
+
+/* SPECIFIC FIXES FOR COMMON OVERFLOW CAUSES */
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100vw !important;
+}
+
+/* PREVENT WHITESPACE ISSUES */
+pre {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-x: hidden !important;
+}
+
+/* ENSURE NO ELEMENT CAN EXTEND BEYOND VIEWPORT */
+body > * {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* FINAL CATCH-ALL */
+html, body, #root, #root > * {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+/* HIDE ALL SCROLLBARS COMPLETELY */
+* {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+  display: none !important; /* WebKit browsers (Chrome, Safari, Edge) */
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-track {
+  display: none !important;
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none !important;
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-corner {
+  display: none !important;
+  background: transparent !important;
+}
+
+/* Hide scrollbars on specific elements */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+div::-webkit-scrollbar,
+section::-webkit-scrollbar,
+main::-webkit-scrollbar,
+article::-webkit-scrollbar,
+aside::-webkit-scrollbar,
+header::-webkit-scrollbar,
+footer::-webkit-scrollbar,
+nav::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Ensure smooth scrolling without visible scrollbars */
+html {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+body {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+/* Hide scrollbars on overflow containers */
+.overflow-auto::-webkit-scrollbar,
+.overflow-scroll::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.overflow-auto,
+.overflow-scroll,
+.overflow-y-auto,
+.overflow-x-auto {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+/* Force hide on any element that might show scrollbars */
+textarea::-webkit-scrollbar,
+select::-webkit-scrollbar,
+input::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+textarea,
+select,
+input {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
