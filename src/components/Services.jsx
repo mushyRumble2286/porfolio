@@ -80,11 +80,11 @@ const Services = () => {
     <section 
       ref={elementRef}
       id="services" 
-      className={`py-20 relative transition-all duration-1000 ease-out ${
+      className={`py-16 relative transition-all duration-1000 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         <div className={`text-center mb-12 md:mb-16 transition-all duration-1000 delay-200 ease-out ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
