@@ -80,11 +80,13 @@ const Services = () => {
     <section 
       ref={elementRef}
       id="services" 
-      className={`py-16 relative transition-all duration-1000 ease-out ${
+      className={`py-20 overflow-x-hidden relative transition-all duration-1000 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
       <div className="relative z-10 max-w-7xl mx-auto px-4">
+        
+        {/* Heading */}
         <div className={`text-center mb-12 md:mb-16 transition-all duration-1000 delay-200 ease-out ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
@@ -97,12 +99,13 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-12 md:mb-16">
+        {/* Service Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-12 md:mb-16 overflow-visible">
           {services.map((service, index) => (
             <div
               key={index}
               className={`relative bg-gray-900/50 backdrop-blur-sm border border-gray-800/50 rounded-sm shadow-2xl hover:shadow-gray-900/50 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 ${
-                service.popular ? 'ring-2 ring-white scale-105' : ''
+                service.popular ? 'ring-2 ring-white' : ''
               } ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
@@ -111,7 +114,7 @@ const Services = () => {
               }}
             >
               {service.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <span className="bg-white text-black px-6 py-2 rounded-sm text-sm font-semibold shadow-lg">
                     Most Popular
                   </span>
@@ -196,6 +199,7 @@ const Services = () => {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

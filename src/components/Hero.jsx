@@ -55,12 +55,12 @@ const Hero = () => {
       }`}
     >
       <div className="relative z-10 container mx-auto px-4 mt-8">
-        <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className={`transition-all duration-1000 delay-300 ease-out ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}>
+            }`}
+              style={{ background: 'none', boxShadow: 'none', border: 'none' }}>
               {/* Main Heading */}
               <div className="mb-8">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-2 leading-tight tracking-tight">
@@ -130,41 +130,42 @@ const Hero = () => {
             </div>
 
             {/* Right Side - Picture Area */}
-            <div className={`flex justify-center lg:justify-end transition-all duration-1000 delay-500 ease-out ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}>
-              <div className="relative">
-                {/* Intersecting Circles Background */}
-                <div className="relative w-96 h-96 md:w-112 md:h-112">
-                  {/* White Circle (More Prominent) */}
-                  <div className="absolute top-0 left-8 w-88 h-88 md:w-96 md:h-96 bg-white rounded-full opacity-90"></div>
-                  
-                  {/* Black Circle (Intersecting) */}
-                  <div className="absolute top-8 left-0 w-88 h-88 md:w-96 md:h-96 bg-black rounded-full opacity-70"></div>
-                  
-                  {/* Gray Intersection Effect */}
-                  <div className="absolute top-4 left-4 w-88 h-88 md:w-96 md:h-96 bg-gray-400 rounded-full opacity-30 mix-blend-multiply"></div>
-                  
-                  {/* Picture Container */}
-                  <div className="absolute inset-0 flex items-start justify-center pt-4 z-10">
-                    <div className="w-80 h-80 md:w-88 md:h-88 rounded-full overflow-hidden shadow-2xl">
-                      <img 
-                        src="/4.jpg" 
-                        alt="Favour Bernard-Ekwe" 
+            <div
+              className={`flex justify-center lg:justify-center transition-all duration-1000 delay-500 ease-out ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
+            >
+              <div className="relative rounded-full overflow-visible w-[360px] h-[360px] md:w-[420px] md:h-[420px]">
+                {/* Floating Elements */}
+                <div className="absolute -left-8 top-1/4 w-4 h-4 bg-white/30 rounded-full animate-pulse-float-1"></div>
+                <div className="absolute -right-8 top-1/3 w-6 h-6 bg-gray-400/40 rounded-full animate-pulse-float-2"></div>
+                <div className="absolute -bottom-8 left-1/3 w-5 h-5 bg-white/20 rounded-full animate-pulse-float-3"></div>
+
+                {/* Main circular content */}
+                <div className="relative w-full h-full rounded-full">
+                  {/* White Circle */}
+                  <div className="absolute -top-4 left-6 w-[340px] h-[340px] md:w-[400px] md:h-[400px] bg-white rounded-full opacity-90"></div>
+
+                  {/* Black Circle */}
+                  <div className="absolute top-4 -left-2 w-[340px] h-[340px] md:w-[400px] md:h-[400px] bg-black rounded-full opacity-70"></div>
+
+                  {/* Gray Intersection */}
+                  <div className="absolute top-0 left-2 w-[340px] h-[340px] md:w-[400px] md:h-[400px] bg-gray-400 rounded-full opacity-30 mix-blend-multiply"></div>
+
+                  {/* Picture */}
+                  <div className="absolute inset-0 flex items-start justify-center pt-2 -translate-y-2 z-10">
+                    <div className="w-[320px] h-[320px] md:w-[360px] md:h-[360px] rounded-full overflow-hidden">
+                      <img
+                        src="/4.jpg"
+                        alt="Favour Bernard-Ekwe"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                  </div>
-                  
-                  {/* Floating Elements */}
-                  <div className="absolute -top-4 -right-4 w-8 h-8 bg-white/20 rounded-full animate-pulse"></div>
-                  <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gray-400/30 rounded-full animate-pulse delay-1000"></div>
-                  <div className="absolute top-1/2 -right-8 w-4 h-4 bg-white/30 rounded-full animate-pulse delay-2000"></div>
+                  </div>                  
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
 
       {/* Scroll Indicator */}

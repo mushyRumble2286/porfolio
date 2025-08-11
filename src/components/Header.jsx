@@ -24,34 +24,34 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-8 overflow-hidden">
+          <div className="hidden md:flex items-center space-x-8 lg:space-x-12 overflow-hidden">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap"
+              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2"
             >
               Home
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute -bottom-1 left-2 w-0 h-0.5 bg-white group-hover:w-[70%] origin-left transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap"
+              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2"
             >
               Services
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute -bottom-1 left-2 w-0 h-0.5 bg-white group-hover:w-[70%] origin-left transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
-              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap"
+              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2"
             >
               Portfolio
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute -bottom-1 left-2 w-0 h-0.5 bg-white group-hover:w-[70%] origin-left transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('testimonials')}
-              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap"
+              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2"
             >
               Reviews
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute -bottom-1 left-2 w-0 h-0.5 bg-white group-hover:w-[70%] origin-left transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('contact')}
