@@ -24,31 +24,31 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-12 overflow-hidden">
+          <div className="hidden md:flex items-center overflow-hidden">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2"
+              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2 mr-8 lg:mr-12"
             >
               Home
               <span className="absolute -bottom-1 left-2 w-0 h-0.5 bg-white group-hover:w-[70%] origin-left transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2"
+              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2 mr-8 lg:mr-12"
             >
               Services
               <span className="absolute -bottom-1 left-2 w-0 h-0.5 bg-white group-hover:w-[70%] origin-left transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('portfolio')}
-              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2"
+              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2 mr-8 lg:mr-12"
             >
               Portfolio
               <span className="absolute -bottom-1 left-2 w-0 h-0.5 bg-white group-hover:w-[70%] origin-left transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('testimonials')}
-              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2"
+              className="text-gray-300 hover:text-white transition-all duration-300 font-medium relative group whitespace-nowrap px-2 mr-24"
             >
               Reviews
               <span className="absolute -bottom-1 left-2 w-0 h-0.5 bg-white group-hover:w-[70%] origin-left transition-all duration-300"></span>
