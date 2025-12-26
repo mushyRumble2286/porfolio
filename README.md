@@ -2,16 +2,6 @@
 
 A modern, high-converting landing page for freelance web development services.
 
-## Features
-
-- **Modern Design**: Clean, sleek UI with beautiful animations and gradients
-- **Typewriter Effect**: Dynamic hero section with rotating text
-- **Responsive**: Fully mobile-optimized design
-- **High Converting**: Strategically placed CTAs and social proof
-- **SEO Optimized**: Proper meta tags and structured data
-- **WhatsApp Integration**: Direct contact via WhatsApp
-- **Paystack Ready**: Payment integration setup
-
 ## Services Offered
 
 - ✅ Simple Landing Page – ₦15,000
@@ -34,27 +24,12 @@ A modern, high-converting landing page for freelance web development services.
 3. Start development server: `npm run dev`
 4. Build for production: `npm run build`
 
-## Customization
-
-1. Update phone number in components (search for "2348123456789")
-2. Update email address (search for "favour.bernardekwe@gmail.com")
-3. Replace project images in Portfolio component
-4. Customize colors in `tailwind.config.js`
-5. Update meta tags in `index.html`
-
-## Deployment
-
-The project is configured for easy deployment on Vercel:
-
-1. Push to GitHub
-2. Connect to Vercel
-3. Deploy automatically
 
 ## Contact
 
-- **WhatsApp**: +234 812 345 6789
-- **Email**: favour.bernardekwe@gmail.com
-- **Location**: Lagos, Nigeria
+- **WhatsApp**: +234 907 822 2262
+- **Email**: favourbernardekwe@gmail.com
+- **Location**: Abuja, Nigeria
 
 ---
 
